@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./tsbuildinfo.json",
+    "target": "ESNext",
+    "module": "commonjs",
+    "sourceMap": true,
+    "sourceRoot": "/ts",
+    "outDir": "./src/js",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  "include": ["./src/ts/**/*.ts"]
+}
