@@ -11,6 +11,69 @@ body {
     'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'ST Heiti',
     'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimHei,
     sans-serif;
+
+  // Disable user selection
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+// Headings style
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Paragraphs style
+p {
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+
+// Lists style
+ul,
+ol,
+dl {
+  margin: 0.75rem 0;
+  padding-left: 1rem;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+// Blockquote style
+blockquote {
+  color: #777;
+
+  margin: 0.75rem 0;
+  padding: 0 15px;
+  border-left: 4px solid #dfe2e5;
 }
 
 // Link style

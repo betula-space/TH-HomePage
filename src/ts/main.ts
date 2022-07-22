@@ -16,3 +16,9 @@ console.info(
   )}月${numberToChinese(diffTime.day)}日`,
   'font-weight: bold',
 );
+
+// Click the navTitleEl will navigate to homepage
+const navTitleEl = document.querySelector('.page-header-content .title') as HTMLHeadingElement;
+navTitleEl.onclick = () => {
+  window.location.href = '/';
+};

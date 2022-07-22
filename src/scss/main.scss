@@ -77,6 +77,11 @@
   // Main content should cover the whole page
   min-height: calc(100vh - $page-header-height);
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   padding: 0 2rem;
 }
 
@@ -131,6 +136,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+// Rules page specific
+.rules {
+  max-width: $breakpoint-md;
+
+  margin: 1rem 0 2rem 0;
 }
 
 // Responsive design
