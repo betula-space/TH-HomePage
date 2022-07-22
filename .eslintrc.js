@@ -1,7 +1,3 @@
 module.exports = {
-  extends: [
-    'eslint-config-ali/typescript',
-    'prettier',
-    'prettier/@typescript-eslint',
-  ],
+  extends: ['eslint-config-ali/typescript', 'prettier', 'prettier/@typescript-eslint'],
 };

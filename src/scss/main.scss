@@ -1,2 +1,78 @@
 @charset "UTF-8";
-@import 'normalize.css';
+@import 'normalize.scss';
+@import 'variables.scss';
+
+// Defaults
+body {
+  // Not pure black
+  color: #3d3d3d;
+  background-color: #fff;
+
+  // Fonts
+  font-family: -apple-system, 'Noto Sans CJK SC', 'Noto Sans', 'Helvetica Neue', Helvetica,
+    'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'ST Heiti',
+    'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimHei,
+    sans-serif;
+}
+
+// Page structure: header, main, footer
+.page-header {
+  height: calc($page-header-height - 1px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 1rem;
+  border-bottom: 1px solid #bfbfbf;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-main {
+  // Main content should cover the whole page
+  min-height: calc(100vh - $page-header-height);
+}
+
+.page-footer {
+  height: calc($page-footer-height - 1px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  background-color: #262626;
+
+  .slogan {
+    margin: 0.5rem 0;
+  }
+}
+
+// Homepage specific
+.home-page-header {
+  color: #fff;
+  background-color: rgba(#000, 0.5);
+
+  border-bottom: none;
+}
+
+.home-background {
+  height: 100vh;
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: url('https://vip2.loli.io/2022/07/21/YvJQ4EWoTiqUpXl.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

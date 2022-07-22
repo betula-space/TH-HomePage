@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "ESNext",
-    "module": "commonjs",
+    "target": "ES6",
     "sourceMap": true,
     "outDir": "src/js",
     "esModuleInterop": true,
