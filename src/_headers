@@ -1,0 +1,3 @@
+# Cloudflare Pages headers config
+/*
+  Cache-Control: public, no-cache, must-revalidate
