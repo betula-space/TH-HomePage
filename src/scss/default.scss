@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+// Global defaults
+body {
+  // Not pure black
+  color: $text-color;
+  background-color: $background-color;
+
+  // Fonts
+  font-family: -apple-system, 'Noto Sans CJK SC', 'Noto Sans', 'Helvetica Neue', Helvetica,
+    'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'ST Heiti',
+    'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimHei,
+    sans-serif;
+}
+
+// Link style
+a {
+  color: $link-color;
+  outline: none;
+  text-decoration: underline;
+}
+
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  color: $background-color;
+  background-color: $link-color;
+  text-decoration: underline;
+}

@@ -1,8 +1,13 @@
 // Simplified Chinese number characters and units
-// Note that '〇' and '零' are actually different representations of the same character
+// Note that "〇" and "零" are actually different representations of the same character
 const chnNumChar = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
 const chnUnitSection = ['', '万', '亿', '万亿', '亿亿'];
 const chnUnitChar = ['', '十', '百', '千'];
+
+// ======================================================================================================================
+// FIXME The existing section processing logic will cause the character "〇" to be missed in some cases, e.g. Input
+// "200005000" should return "二亿〇五千", but it actually returns "二亿五千"
+// ======================================================================================================================
 
 // Subfunction for converting some Arabic numerals to Chinese numerals
 const sectionToChinese = (section: number) => {
@@ -27,7 +32,7 @@ const sectionToChinese = (section: number) => {
     // eslint-disable-next-line no-param-reassign
     section = Math.floor(section / 10);
   }
-  // According to the national standard, the '一' in '一十' is not written
+  // According to the national standard, the "一" in "一十" is not written
   return chnStr.replace('一十', '十');
 };
 
