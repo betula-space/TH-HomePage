@@ -150,4 +150,15 @@
 }
 
 // Responsive design
-// WIP...
+// If screen width > $breakpoint-sm, such as iPad, Laptop and PC,
+// I think there is no need to modify default settings
+@media screen and (max-width: $breakpoint-sm) {
+  .page-header,
+  .page-main {
+    padding: 0 1.25rem;
+  }
+
+  .page-header .nav {
+    display: none;
+  }
+}
